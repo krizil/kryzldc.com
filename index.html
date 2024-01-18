@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kryzl.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="webjavascript.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const letters = document.querySelectorAll(".letter");
+
+          letters.forEach(function (letter) {
+            letter.addEventListener("mouseenter", function () {
+              // Generate a random color
+              const randomColor = getRandomColor();
+
+              // Apply the random color on mouse enter
+              letter.style.color = randomColor;
+            });
+
+            letter.addEventListener("mouseleave", function () {
+              // Reset the color on mouse leave
+              letter.style.color = "";
+            });
+          });
+
+          // Function to generate a random color
+          function getRandomColor() {
+            const letters = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+              color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+          }
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="inner_header">
+            <div class="profile">
+                <a href="#">Kryzl</a>
+            </div>
+            <!-- <div class="hamburger_container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png" alt="">
+            </div> -->
+                <div class="menu">
+                    <div class="inner_menu">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="home" class="main-content1">
+            <div class="content1">
+                <div class="jobtitle">
+                    <h1>
+                        <span class="letter">W</span>
+                        <span class="letter">e</span>
+                        <span class="letter">b</span>
+                        <span class="letter"> </span>
+                        <span class="letter">D</span>
+                        <span class="letter">e</span>
+                        <span class="letter">v</span>
+                        <span class="letter">e</span>
+                        <span class="letter">l</span>
+                        <span class="letter">o</span>
+                        <span class="letter">p</span>
+                        <span class="letter">e</span>
+                        <span class="letter">r</span>
+                      </h1>
+                    <div class="description1">
+                        <p> Solving design issues, designing user-friendly interfaces with helpful interactions,
+                            creating feature-rich web applications, and ensuring effortless web experiences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile">
+                <img src="Images/phone.png" alt="Mobile Phone">
+            </div>
+        </div>
+
+
+        <div id="about" class="main-content2">
+            <div class="content2">
+                <div class="dis-container">
+                    <div class="title1">
+                        <h1>Hi, I'm Kryzl<br>Web Developer</h1>
+                    </div>
+                    <div class="description2">
+                        <p>I am a problem solver and a highly organized individual with great attention to detail.
+                            I enjoy watching movies, playing video games, and, of course, coding.<br><br>I have a keen interest
+                            in the entire range of frontend development and am eager to collaborate on ambitious projects with
+                            intriguing individuals.</p>
+                    </div>
+                </div>
+                <div class="airplane">
+                    <img src="Images/airplane.png" alt="Air Plane">
+                </div>
+            </div>
+        </div>
+
+
+        <div id="about" class="skills">
+            <div class="overlap-group-wrapper">
+              <div class="overlap-group">
+                <div class="skills-experiences">Skills &amp; Experiences</div>
+                <img class="css" src="Images/css.png" />
+                <img class="csharp" src="Images/csharp.png" />
+                <img class="figma" src="Images/figma.png" />
+                <img class="html" src="Images/html.png" />
+                <img class="java" src="Images/java.png" />
+                <img class="vscode" src="Images/vscode.png" />
+              </div>
+            </div>
+        </div>
+
+        <div id="projects" class="projects">
+            <div class="overlap">
+                <div class="window">
+                    <img src="Images/project.png" alt="Project">
+                </div>
+                    <div class="soon">
+                        <h1>PROJECTS COMING SOON</h1>
+                    </div>
+                </div>
+        </div>
+        
+        
+        <section id="contact" class="contact-section">
+            <div class="container">
+              <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
+              </div>
+              <div class="contact-form">
+                <div class="input-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name">
+                </div>
+                <div class="input-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email">
+                </div>
+                <div class="input-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <div class="submit-button">
+                  <button>Submit</button>
+                </div>
+              </div>
+              <div class="contact-details">
+                <a href="mailto:kryzl.delacruz.123@email.com" class="email">kryzl.delacruz.123@email.com</a>
+                <p>Zone 3, Mohon Tagoloan<br>Misamis Oriental, 9001</p>
+                <div class="social-icons">
+                  <!-- Social icons SVG code here -->
+                </div>
+              </div>
+            </div>
+        </section>
+          
+        
+
+</body>
+</html>

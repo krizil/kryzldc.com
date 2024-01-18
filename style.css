@@ -1,0 +1,748 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: #141416; */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background-image: url('second.png');
+    background-size: cover; */
+
+
+}
+
+.header {
+
+   width: 100%;
+   height: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   /* background-color: yellow; */
+
+   z-index: 1000;
+}
+
+.inner_header {
+    width: 1450px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+
+.inner_menu a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    position: relative;
+    left: -554px;
+    /* background-color: yellow;  */
+}
+
+.menu a {
+    text-decoration: none;
+    margin: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: white;
+}
+
+.profile {
+    margin-left: 10px;
+    /* background-color: aquamarine; */
+}
+
+.profile a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu a:hover,
+.menu a:active {
+    color: violet;
+}
+
+/* ---------------CONTENT 1 -----------------------*/
+
+.main-content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%;
+    height: 400px; */
+    background-image: url('Images/second.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    background-attachment: fixed;
+    color: white;
+    /* background-color: yellowgreen; */
+
+}
+
+.content1 {
+    width: 95%;
+    height: 170px;
+    display: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: blanchedalmond; */
+}
+
+
+.jobtitle h1 span {
+    display: inline-block; /* Ensure each span appears on the same line */
+    letter-spacing: -20px;
+  }
+
+
+
+.jobtitle {
+    width: 70%;
+    height: 170px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3%;
+    font-size: 38px;
+    /* background-color: blue; */
+}
+
+.description1 {
+    align-self: flex-end;
+    font-size: 20px;
+     /* background-color: blueviolet; */
+}
+
+.mobile {
+    width: 455px;
+    height: 549px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 5%;
+    /* background-color: blue; */
+}
+
+
+.mobile img {
+    max-width: 455px;
+    height: auto;
+    margin-right: 120px;
+    margin-top: 50px;
+
+}
+
+/* ------------------------SECOND PAGE------------------- */
+
+.main-content2 {
+    background-image: url('Images/second.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    background-attachment: fixed;
+}
+
+.content2 {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column; /* Updated to a column layout */
+    margin-top: 15%;
+    /* background-color: blanchedalmond; */
+}
+
+.dis-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 98%;
+    height: 150px;
+    /* background-color: violet; */
+}
+
+.title1 {
+    width: 90%;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3%;
+    font-size: 30px;
+    /* background-color: blue; */
+}
+
+.description2 {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3%;
+    font-size: 20px;
+    /* background-color: yellow; */
+}
+
+.airplane {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3%;
+   /* margin-top: 20px;  Add margin to separate the airplane from the content above */
+
+    /* background-color: brown; */
+}
+
+.airplane img {
+    max-width: 455px;
+    height: auto;
+}
+
+/* -------------------THIRD PAGE-------------------- */
+
+
+.skills {
+    background-image: url('Images/second.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-attachment: fixed;
+
+
+
+}
+
+.skills .overlap-group-wrapper {
+
+    width: 100%;
+    height: 100vh;
+
+}
+
+.skills .overlap-group {
+    position: relative;
+    height: 100vh;
+
+}
+
+.skills-experiences {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    font-weight: 700;
+    font-size: 60px;
+    letter-spacing: 0;
+    line-height: 70px;
+    white-space: nowrap;
+    color: white;
+
+}
+
+
+.skills .css {
+    position: absolute;
+    height: 109px;
+    width: 109px;
+    top: 300px;
+    left: 400px;
+}
+
+.skills .html {
+    position: absolute;
+    width: 109px;
+    height: 109px;
+    top: 300px;
+    left: 700px;
+}
+
+.skills .java {
+    position: absolute;
+    width: 109px;
+    height: 165px;
+    top: 250px;
+    left: 1000px;
+}
+
+.skills .vscode {
+    position: absolute;
+    width: 109px;
+    height: 109px;
+    top: 500px;
+    left: 400px;
+}
+
+.skills .csharp {
+    position: absolute;
+    width: 109px;
+    height: 109px;
+    top: 500px;
+    left: 700px;
+}
+
+.skills .figma {
+    position: absolute;
+    width: 109px;
+    height: 109px;
+    top: 500px;
+    left: 1000px;
+}
+
+/* -------------------FORTH PAGE-------------------- */
+
+.projects {
+    background-image: url('Images/second.png');
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-attachment: fixed;
+    color: white;
+
+}
+
+.overlap {
+    width: 95%;
+    height: 170px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 100px;
+    /* background-color: blanchedalmond; */
+}
+
+.soon {
+    width: 60%;
+    height: 170px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3%;
+    font-size: 35px;
+
+    /* background-color: blue; */
+}
+
+.window {
+    width: 455px;
+    height: 549px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column-reverse;
+    /* background-color: blue; */
+}
+
+
+.window img {
+    max-width: 950px;
+    height: auto;
+    margin-top: 50px;
+}
+
+
+/* -------------------CONTACT PAGE-------------------- */
+
+.contact-section {
+    background-image: url('Images/second.png');
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: #fff;
+    padding: 60px 0;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .contact-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .input-group {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+    font-size: 14px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid #777;
+    color: #fff;
+    outline: none;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .submit-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  button {
+    background-color: rgb(69, 4, 69);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .contact-details {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .email {
+    color: violet
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    margin-left: 10px;
+    color: #777;
+  }
+
+
+  @media only screen and (max-width: 768px){
+    html,
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x:hidden;
+    }
+}
+
+@media only screen and (max-width:600px) {
+
+    .header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .inner_header {
+        width: 100%;
+        max-width: 600px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: blue; */
+    }
+
+    .inner_menu {
+        display: flex;
+        justify-content: center; /* Center the menu items horizontally */
+        align-items: center;
+        width: 100%; /* Set to 100% to fill the entire width of .inner_header */
+    }
+
+    .menu {
+        position: relative;
+        left: -554px;
+    }
+
+    .main-content1
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('Images/second.png');
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+
+        background-attachment: fixed;
+        color: white;
+
+    }
+
+    .inner_menu{
+        display: none;
+    }
+
+    .jobtitle h1 span {
+        display: inline-block; /* Ensure each span appears on the same line */
+        letter-spacing: -10px;
+      }
+
+    .jobtitle {
+        width: 220px;
+        height: auto;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 3%;
+        font-size: 15px;
+        /* background-color: blue; */
+    }
+
+    .description1 {
+        align-self: flex-end;
+        margin-top: 5px;
+        font-size: 12px;
+         /* background-color: blueviolet; */
+    }
+
+    .mobile img {
+            max-width: 165px;
+            height: auto;
+            margin-top: -50px;
+            margin-right: 0%;
+            margin-left: 50px;
+            /* background-color: beige; */
+
+        }
+
+
+    .main-content2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('Images/second.png');
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+
+        background-attachment: fixed;
+        color: white;
+    }
+
+    .description2 {
+        width: 90%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3%;
+        font-size: 12px;
+        /* background-color: yellow; */
+    }
+
+    .title1 {
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 3%;
+        font-size: 15px;
+      
+    }
+    
+    .airplane {
+        width: 100px;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 3%;
+
+    }
+
+    .airplane img {
+        max-width: 165px;
+        height: auto;
+
+    }
+
+    .skills
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('Images/second.png');
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+
+        background-attachment: fixed;
+        color: white;
+    }
+
+
+    .skills-experiences {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        font-size: 30px;
+        color: white;
+
+    }
+
+    .skills .css {
+        position: absolute;
+        height: auto;
+        width: 80px;
+        top: 220px;
+        left: 40px;
+    }
+
+    .skills .html {
+        position: absolute;
+        width: 80px;
+        height: auto;
+        top: 220px;
+        left: 190px;
+    }
+
+    .skills .java {
+        position: absolute;
+        width: 84px;
+        height: auto;
+        top: 190px;
+        left: 340px;
+    }
+
+    .skills .vscode {
+        position: absolute;
+        width: 80px;
+        height: auto;
+        top: 355px;
+        left: 40px;
+    }
+
+    .skills .csharp {
+        position: absolute;
+        width: 95px;
+        height: auto;
+        top: 355px;
+        left: 190px;
+    }
+
+    .skills .figma {
+        position: absolute;
+        width: 95px;
+        height: auto;
+        top: 355px;
+        left: 340px;
+    }
+
+    .projects {
+        background-image: url('Images/second.png');
+        background-size: cover;
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-attachment: fixed;
+        color: white;
+
+    }
+
+    .overlap {
+        width: 100%;
+        height: 120px;
+
+        /* background-color: blanchedalmond; */
+    }
+
+    .soon {
+        width: 60%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 15px;
+        /* background-color: blue; */
+    }
+
+    .window {
+        width: 90%; /* Adjust width for full width on smaller screens */
+        height: auto; /* Adjust height for smaller screens */
+    }
+
+    .window img {
+        max-width: 190%; /* Make the image responsive */
+    }
+
+    .contact-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('Images/second.png');
+        background-size: cover;
+        height: 80vh;
+        width: 100%;
+
+        background-attachment: fixed;
+        color: white;
+
+
+    }
+
+    .contact-details {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 15px;
+      }
+
+
+      .contact-header {
+        font-size: 15px;
+      }
+}
